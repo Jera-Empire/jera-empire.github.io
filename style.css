@@ -307,6 +307,7 @@ main section{
     padding:30px;
 
     border:3px solid #666;
+    text-align: center;
 }
 
 /* ==========================
@@ -315,7 +316,10 @@ main section{
 
 .anthem-video{
     display:block;
-    margin:0 auto 40px;
+    width:100%;
+    aspect-ratio:16/9;
+    height:auto;
+    border:0;
 }
 
 /* ==========================
@@ -323,13 +327,47 @@ main section{
 ========================== */
 
 .top-front-page-title{
-    margin-bottom:40px;
+    height:60px;
+    margin-bottom:20px;
 }
 
 .front-page-title{
-    margin-top:40px;
-    margin-bottom:40px;
-    align-self
+    margin:0;
+}
+
+/* ==========================
+   SIDEBAR ROWS
+   (fixed-height slots so both
+   sidebars line up row by row)
+========================== */
+
+.side-media{
+    height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.side-media img{
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+    height:auto;
+}
+
+.side-caption{
+    height:90px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top:22px;
+    gap:8px;
+}
+
+.side-caption p{
+    margin:0;
 }
 
 /* ==========================
@@ -556,12 +594,8 @@ footer{
 
 .homepage{
     display:grid;
-    grid-template-columns:280px 1fr 320px;
+    grid-template-columns:280px 1fr 280px;
     gap:70px;
-}
-
-.sidebar{
-    width:260px;
 }
 
 .content{
@@ -577,4 +611,60 @@ footer{
     margin:25px auto;
     line-height:1.8;
     font-size:22px;
+}
+/* ==========================
+   VIDEO RULE
+========================== */
+/* Allow the video wrapper to fit its content height instead of forcing 300px */
+.side-item:has(.anthem-video) .side-media {
+    height: auto;
+}
+
+/* Ensure iframe expands properly inside its container */
+.anthem-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+}
+/* ==========================
+   STAT CARDS
+========================== */
+.stats-card {
+  border: 1px solid #444;
+  background-color: #2b2b2b;
+  padding: 15px;
+  margin-top: 20px;
+  font-family: monospace; /* Matches your body font */
+}
+
+.stats-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: 'Times New Roman', serif; /* Matches your header font */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  border-bottom: 1px solid #00aa00; /* Imperial Green accent border */
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 15px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.stat-label {
+  font-weight: bold;
+  color: #aaa;
+  text-align: right;
+}
+
+.stat-value {
+  text-align: left;
 }
