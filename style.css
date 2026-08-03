@@ -9,10 +9,31 @@
     box-sizing:border-box;
 }
 
+html,
+body{
+    overflow-x:hidden;
+}
+
 body{
     background:#4a4a4a;
     color:white;
     font-family:"Courier New", monospace;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,h2,h3,.national-header{
+    font-family:'Cinzel',serif;
+    font-weight:700;
+    letter-spacing:.05em;
+    text-transform:uppercase;
 }
 
 /* ==========================
@@ -20,155 +41,162 @@ body{
 ========================== */
 
 header{
-    padding:40px 0;
+    padding:40px 20px;
 }
 
 .header-container{
     max-width:1200px;
     margin:auto;
+
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
+
     gap:35px;
 }
 
 .flag{
-    width:240px;
+    width:min(240px,70vw);
     height:auto;
 }
 
+.title-area{
+    text-align:center;
+}
+
 .title-area h1{
-    font-size:64px;
+    font-size:clamp(2.5rem,6vw,4rem);
     font-weight:normal;
-    letter-spacing:3px;
 }
 
 .subtitle{
-    font-size:24px;
-    color:#dddddd;
     margin-top:10px;
+    color:#ddd;
+    font-size:clamp(1rem,3vw,1.5rem);
 }
-/* Apply Cinzel to headings */
-h1, h2, h3, .national-header {
-  font-family: 'Cinzel', serif;
-  font-weight: 700; /* Bold */
-  letter-spacing: 0.05em; /* Adding a tiny bit of tracking looks great with imperial caps */
-  text-transform: uppercase;
-}
+
 /* ==========================
    NAVIGATION
 ========================== */
-/* Keeps navigation items in a row */
-/* Keeps navigation items in a row */
-nav {
-  display: flex;
-  background-color: #0d8212; /* Matches your green nav bar */
-  align-items: center;
-}
 
-/* Base link styling */
-nav a, .dropbtn {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  display: inline-block;
-  font-family: monospace; /* Matches your current monospace font */
-}
-
-/* Dropdown wrapper positioning */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* The clean dropdown menu (No Scroll) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #0a630e; /* Slightly darker green for menu background */
-  min-width: 200px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-}
-
-/* Links inside the dropdown list */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  display: block;
-  white-space: nowrap;       /* Prevents text from wrapping */
-}
-
-/* Hover effect on dropdown links */
-.dropdown-content a:hover {
-  background-color: #07470a;
-}
-
-/* Show the dropdown menu when hovering over Overview */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Hover effects */
-.dropdown-content a:hover {
-  background-color: #07470a;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Custom Scrollbar Styling (Optional) */
-.dropdown-content::-webkit-scrollbar {
-  width: 6px;
-}
-
-.dropdown-content::-webkit-scrollbar-thumb {
-  background: #1bf024;        /* Bright green scroll handle */
-  border-radius: 3px;
-}
 nav{
-    width:100%;
+
     background:#138d11;
+
     border-top:2px solid #249d1e;
     border-bottom:2px solid #0b6508;
+}
+
+.menu-toggle{
+
+    display:none;
+
+    width:100%;
+
+    background:#138d11;
+
+    color:white;
+
+    border:none;
+
+    padding:18px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    font-family:"Courier New", monospace;
+}
+
+.nav-links{
 
     display:flex;
+
     justify-content:center;
+
     flex-wrap:wrap;
 }
 
-nav a{
+.nav-links>a,
+.dropbtn{
+
+    display:block;
 
     color:white;
+
     text-decoration:none;
 
-    padding:16px 45px;
+    padding:18px 28px;
 
     font-size:20px;
 
-    border-left:2px solid #cccccc;
+    text-align:center;
 }
 
-nav a:last-child{
-    border-right:2px solid #cccccc;
-}
+.nav-links>a:hover,
+.dropbtn:hover{
 
-nav a:hover{
     background:#28b71c;
 }
 
+.dropdown{
+
+    position:relative;
+}
+
+.dropdown-content{
+
+    display:none;
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    background:#0a630e;
+
+    min-width:220px;
+
+    z-index:1000;
+}
+
+.dropdown-content a{
+
+    display:block;
+
+    padding:14px 18px;
+
+    color:white;
+
+    text-decoration:none;
+
+    white-space:nowrap;
+}
+
+.dropdown-content a:hover{
+
+    background:#07470a;
+}
+
+.dropdown:hover .dropdown-content{
+
+    display:block;
+}
+
 /* ==========================
-   MAIN CONTENT
+   MAIN
 ========================== */
 
 main{
     max-width:1200px;
     margin:50px auto;
+    padding:0 20px;
 }
 
-/* Welcome */
+/* ==========================
+   WELCOME
+========================== */
 
 .welcome{
     text-align:center;
@@ -182,8 +210,8 @@ main{
 
 .welcome p{
     font-size:20px;
-    color:#dddddd;
     line-height:1.6;
+    color:#ddd;
 }
 
 /* ==========================
@@ -194,23 +222,24 @@ main{
 
     display:grid;
 
-    grid-template-columns:
-    repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);
 
-    gap:60px;
-
+    gap:40px;
 }
 
 .card{
 
-    text-decoration:none;
+    position:relative;
+
+    overflow:hidden;
 
     color:white;
+
+    text-decoration:none;
 
     text-align:center;
 
     transition:.25s;
-
 }
 
 .card img{
@@ -224,7 +253,6 @@ main{
     border:4px solid #666;
 
     transition:.25s;
-
 }
 
 .card h2{
@@ -234,42 +262,36 @@ main{
     font-size:30px;
 
     font-weight:normal;
-
 }
 
 .card:hover{
-
     transform:translateY(-6px);
-
 }
 
 .card:hover img{
-
     border-color:#30d625;
-
     box-shadow:0 0 18px #30d625;
-
-}
-.card{
-    position:relative;
-    overflow:hidden;
 }
 
 .card::after{
+
     content:"";
+
     position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:calc(100% - 55px);
+
+    inset:0 0 55px 0;
+
     background:rgba(0,180,0,.55);
+
     opacity:0;
+
     transition:.3s;
 }
 
 .card:hover::after{
     opacity:1;
 }
+
 /* ==========================
    NEWS
 ========================== */
@@ -283,21 +305,17 @@ main{
     padding:30px;
 
     border:2px solid #666;
-
 }
 
 .news h2{
 
-    margin-bottom:20px;
-
     font-size:34px;
 
+    margin-bottom:20px;
 }
 
 .news ul{
-
     padding-left:25px;
-
 }
 
 .news li{
@@ -305,7 +323,6 @@ main{
     font-size:22px;
 
     margin-bottom:12px;
-
 }
 
 /* ==========================
@@ -321,7 +338,6 @@ footer{
     text-align:center;
 
     padding:35px;
-
 }
 
 footer p{
@@ -329,20 +345,42 @@ footer p{
     margin:10px;
 
     font-size:18px;
-
 }
 
 footer a{
 
-    color:#ffffff;
+    color:white;
 
     text-decoration:none;
-
 }
 
 footer a:hover{
-
     color:#32d629;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:900px){
+
+.header-container{
+
+    flex-direction:column;
+}
+
+.card-grid{
+
+    grid-template-columns:repeat(2,1fr);
+}
+
+nav>a,
+.dropbtn{
+
+    font-size:18px;
+
+    padding:16px;
+}
 
 }
 
@@ -350,76 +388,125 @@ footer a:hover{
    MOBILE
 ========================== */
 
-@media (max-width:900px){
-
-.header-container{
-
-flex-direction:column;
-
-}
-
-.flag{
-
-width:180px;
-
-}
-
-.title-area h1{
-
-font-size:42px;
-
-text-align:center;
-
-}
-
-.subtitle{
-
-text-align:center;
-
-}
-
-.card-grid{
-
-grid-template-columns:1fr 1fr;
-
-}
-
-}
-
 @media (max-width:600px){
 
 nav{
 
-flex-direction:column;
-
+    flex-direction:column;
 }
 
-nav a{
+.dropdown{
 
-border:none;
+    width:100%;
+}
 
-border-top:1px solid #999;
+nav>a,
+.dropbtn{
 
-text-align:center;
+    width:100%;
 
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.25);
+}
+
+.dropdown-content{
+
+    position:static;
+
+    box-shadow:none;
 }
 
 .card-grid{
 
-grid-template-columns:1fr;
-
+    grid-template-columns:1fr;
 }
 
 .welcome h2{
 
-font-size:28px;
+    font-size:28px;
+}
 
+.welcome p{
+
+    font-size:18px;
 }
 
 .card h2{
 
-font-size:24px;
-
+    font-size:24px;
 }
 
+.news{
+
+    padding:20px;
+}
+
+.news h2{
+
+    font-size:28px;
+}
+
+.news li{
+
+    font-size:18px;
+}
+
+footer{
+
+    padding:25px 15px;
+}
+@media (max-width:700px){
+
+.menu-toggle{
+
+    display:block;
+}
+
+.nav-links{
+
+    display:none;
+
+    flex-direction:column;
+
+    width:100%;
+}
+
+.nav-links.show{
+
+    display:flex;
+}
+
+.nav-links>a,
+.dropbtn{
+
+    width:100%;
+
+    padding:18px;
+
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.dropdown{
+
+    width:100%;
+}
+
+.dropdown-content{
+
+    position:static;
+
+    display:block;
+
+    background:#0f6f12;
+}
+
+.dropdown-content a{
+
+    padding-left:40px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+}
 }
