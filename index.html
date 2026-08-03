@@ -27,38 +27,45 @@
 </header>
 
 <nav>
-  <!-- Dropdown Container for Overview -->
-  <div class="dropdown">
-    <a href="index.html" class="dropbtn">Overview ▾</a>
-    <div class="dropdown-content">
-      <a href="pages/aboutjera.html">About Jera</a>
-      <a href="pages/nationalidentity.html">National Identity</a>
-      <!-- Add more overview links here if needed -->
+
+<button class="menu-toggle" onclick="toggleMenu()">
+☰ Menu
+</button>
+
+<div class="nav-links">
+
+    <div class="dropdown">
+        <a href="index.html" class="dropbtn">Overview ▾</a>
+        <div class="dropdown-content">
+            <a href="pages/aboutjera.html">About Jera</a>
+            <a href="pages/nationalidentity.html">National Identity</a>
+        </div>
     </div>
-  </div>
-  <div class="dropdown">
-    <a href="pages/government.html" class="dropbtn">State Affairs ▾</a>
-    <div class="dropdown-content">
-      <a href="pages/sovereign.html">The Sovereign</a>
-      <a href="pages/laws.html">Laws & Constitution</a>
-      <a href="pages/laws.html">Assembly of the Empire</a>
-      <a href="pages/laws.html">Assembly of the Empire</a>
-      <a href="pages/diplomacy.html">Diplomacy</a>
-      <!-- Add more overview links here if needed -->
+
+    <div class="dropdown">
+        <a href="pages/government.html" class="dropbtn">State Affairs ▾</a>
+        <div class="dropdown-content">
+            <a href="pages/sovereign.html">The Sovereign</a>
+            <a href="pages/laws.html">Laws & Constitution</a>
+            <a href="pages/assembly.html">Assembly of the Empire</a>
+            <a href="pages/diplomacy.html">Diplomacy</a>
+        </div>
     </div>
-  </div>
-  <div class="dropdown">
-    <a href="pages/government.html" class="dropbtn">State Records ▾</a>
-    <div class="dropdown-content">
-      <a href="pages/history.html">History</a>
-      <a href="pages/Etymology.html">Etymology</a>
-      <a href="pages/military.html">Military</a>
-      <!-- Add more overview links here if needed -->
+
+    <div class="dropdown">
+        <a href="pages/records.html" class="dropbtn">State Records ▾</a>
+        <div class="dropdown-content">
+            <a href="pages/history.html">History</a>
+            <a href="pages/etymology.html">Etymology</a>
+            <a href="pages/military.html">Military</a>
+        </div>
     </div>
-  </div>
-  <!-- Regular Navigation Links -->
-  <a href="pages/citizenship.html">Citizenship</a>
-  <a href="pages/contact.html">Contact</a>
+
+    <a href="pages/citizenship.html">Citizenship</a>
+    <a href="pages/contact.html">Contact</a>
+
+</div>
+
 </nav>
 
 
@@ -165,6 +172,12 @@ government, military, laws and culture of the Empire.
 </p>
 
 </footer>
+<script>
+function toggleMenu(){
 
+    document.querySelector(".nav-links").classList.toggle("show");
+
+}
+</script>
 </body>
 </html>
