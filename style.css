@@ -194,6 +194,10 @@ main{
     padding:0 20px;
 }
 
+main section{
+    margin-bottom:50px;
+}
+
 /* ==========================
    WELCOME
 ========================== */
@@ -290,6 +294,42 @@ main{
 
 .card:hover::after{
     opacity:1;
+}
+
+/* ==========================
+   IMAGE FRONT PAGE
+========================== */
+
+.sidebar{
+
+    background:#555;
+
+    padding:30px;
+
+    border:3px solid #666;
+}
+
+/* ==========================
+   NATIONAL ANTHEM VIDEO
+========================== */
+
+.anthem-video{
+    display:block;
+    margin:0 auto 40px;
+}
+
+/* ==========================
+   FRONT PAGE TITLES
+========================== */
+
+.top-front-page-title{
+    margin-bottom:40px;
+}
+
+.front-page-title{
+    margin-top:40px;
+    margin-bottom:40px;
+    align-self
 }
 
 /* ==========================
@@ -509,4 +549,32 @@ footer{
 }
 
 }
+}
+/* ==========================
+   HOMEPAGE LAYOUT
+========================== */
+
+.homepage{
+    display:grid;
+    grid-template-columns:280px 1fr 320px;
+    gap:70px;
+}
+
+.sidebar{
+    width:260px;
+}
+
+.content{
+    text-align:left;
+}
+
+.content h1{
+    text-align:center;
+}
+
+.content p{
+    max-width:750px;
+    margin:25px auto;
+    line-height:1.8;
+    font-size:22px;
 }
