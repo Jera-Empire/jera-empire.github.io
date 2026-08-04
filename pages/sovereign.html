@@ -1,229 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="../style.css">
 <head>
-<!-- Load Cinzel from Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-<head>
+    <meta charset="UTF-8">
+    <title>The Jera Empire</title>
 
-<body>
-
-
-<!-- Inside your subpage <head> -->
-<link rel="stylesheet" href="../styles.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Sovereign - The Jera Empire</title>
-
-<style>
-
-body{
-    margin:0;
-    background:#4d4d4d;
-    color:#ffffff;
-    font-family:Consolas, "Courier New", monospace;
-}
-
-header{
-    background:#4d4d4d;
-    padding:30px;
-}
-
-header h1{
-    margin:0;
-    font-size:52px;
-    font-weight:normal;
-}
-
-header p{
-    margin-top:10px;
-    color:#d8d8d8;
-    font-size:20px;
-}
-
-nav{
-    background:#169900;
-    display:flex;
-    justify-content:center;
-    border-top:2px solid #43ce1b;
-    border-bottom:2px solid #0a6500;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:18px 35px;
-    border-left:1px solid rgba(255,255,255,.4);
-}
-
-nav a:last-child{
-    border-right:1px solid rgba(255,255,255,.4);
-}
-
-nav a:hover{
-    background:#43ce1b;
-    color:black;
-}
-
-.container{
-    width:1200px;
-    max-width:95%;
-    margin:50px auto;
-}
-
-.page-title{
-    text-align:center;
-    font-size:48px;
-    margin-bottom:40px;
-}
-
-.profile{
-    display:flex;
-    gap:40px;
-    align-items:flex-start;
-}
-
-.portrait{
-    width:320px;
-    flex-shrink:0;
-}
-
-.portrait img{
-    width:100%;
-    display:block;
-    border:3px solid #666;
-}
-
-.info-box{
-    margin-top:20px;
-    background:#555;
-    border:2px solid #666;
-}
-
-.info-box table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-.info-box td{
-    padding:10px;
-    border-bottom:1px solid #666;
-}
-
-.info-box td:first-child{
-    color:#43ce1b;
-    font-weight:bold;
-    width:35%;
-}
-
-.biography{
-    flex:1;
-}
-
-.biography h2{
-    margin-top:0;
-    color:#43ce1b;
-    font-size:36px;
-}
-
-.biography p{
-    font-size:20px;
-    line-height:1.8;
-    color:#ececec;
-}
-
-.section{
-    margin-top:50px;
-    background:#555;
-    border:2px solid #666;
-    padding:25px;
-}
-
-.section h2{
-    margin-top:0;
-    color:#43ce1b;
-}
-
-footer{
-    background:#2c2c2c;
-    text-align:center;
-    padding:40px;
-    margin-top:60px;
-}
-
-@media(max-width:900px){
-
-.profile{
-    flex-direction:column;
-}
-
-.portrait{
-    width:100%;
-    max-width:350px;
-    margin:auto;
-}
-
-}
-
-</style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Jera Empire" />
+    <link rel="manifest" href="../images/site.webmanifest" />
 </head>
 
 <body>
 
 <header>
+    <a href="../index.html" class="header-link">
+        <div class="header-container">
 
-    <div class="header-container">
+            <img src="../images/flag.png" alt="Jera Empire Flag" class="flag">
 
-        <img src="../images/flag.png" alt="Jera Empire Flag" class="flag">
+            <div class="title-area">
+                <h1>The Jera Empire</h1>
+                <p class="subtitle">Official Government Website</p>
+            </div>
 
-        <div class="title-area">
-            <h1>The Jera Empire</h1>
-            <p class="subtitle">Official Government Website</p>
         </div>
-
-    </div>
-
+    </a>
 </header>
 
-
 <nav>
-  <!-- Dropdown Container for Overview -->
-  <div class="dropdown">
-    <a href="../index.html" class="dropbtn">Overview ▾</a>
-    <div class="dropdown-content">
-      <a href="aboutjera.html">About Jera</a>
-      <a href="nationalidentity.html">National Identity</a>
-      <!-- Add more overview links here if needed -->
-    </div>
-  </div>
-  <div class="dropdown">
-    <a href="government.html" class="dropbtn">State Affairs ▾</a>
-    <div class="dropdown-content">
-      <a href="sovereign.html">The Sovereign</a>
-      <a href="laws.html">Laws & Constitution</a>
-      <a href="laws.html">Assembly of the Empire</a>
-      <a href="laws.html">Assembly of the Empire</a>
-      <a href="diplomacy.html">Diplomacy</a>
-      <!-- Add more overview links here if needed -->
-    </div>
-  </div>
-  <div class="dropdown">
-    <a href="government.html" class="dropbtn">State Records ▾</a>
-    <div class="dropdown-content">
-      <a href="history.html">History</a>
-      <a href="etymology.html">Etymology</a>
-      <a href="military.html">Military</a>
-      <!-- Add more overview links here if needed -->
-    </div>
-  </div>
-  <!-- Regular Navigation Links -->
-  <a href="citizenship.html">Citizenship</a>
-  <a href="contact.html">Contact</a>
-</nav>
 
+<button class="menu-toggle" onclick="toggleMenu()">
+☰ Menu
+</button>
+
+<div class="nav-links">
+
+    <div class="dropdown">
+        <a class="dropbtn">Overview ▾</a>
+        <div class="dropdown-content">
+            <a href="../index.html">Homepage</a>
+            <a href="aboutjera.html">About Jera</a>
+            <a href="nationalidentity.html">National Identity</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a class="dropbtn">State Affairs ▾</a>
+        <div class="dropdown-content">
+            <a href="government.html">The Government</a>
+            <a href="sovereign.html">The Sovereign</a>
+            <a href="laws.html">Laws & Constitution</a>
+            <a href="assembly.html">Assembly of the Empire</a>
+            <a href="diplomacy.html">Diplomacy</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a class="dropbtn">State Records ▾</a>
+        <div class="dropdown-content">
+            <a href="history.html">History</a>
+            <a href="etymology.html">Etymology</a>
+            <a href="military.html">Military</a>
+        </div>
+    </div>
+
+    <a href="citizenship.html">Citizenship</a>
+    <a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
 
 <div class="container">
 

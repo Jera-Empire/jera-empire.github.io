@@ -1,0 +1,420 @@
+/* ==========================
+   THE JERA EMPIRE
+   Official Website Stylesheet
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    background: #4a4a4a;
+    color: white;
+    font-family: "Courier New", monospace;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1, h2, h3, .national-header {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header {
+    padding: 40px 20px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.flag {
+    width: min(240px, 70vw);
+    height: auto;
+}
+
+.title-area {
+    text-align: center;
+}
+
+.title-area h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: normal;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #ddd;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav {
+    background: #138d11;
+    border-top: 2px solid #249d1e;
+    border-bottom: 2px solid #0b6508;
+}
+
+.menu-toggle {
+    display: none;
+    width: 100%;
+    background: #138d11;
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Courier New", monospace;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-links > a,
+.dropbtn {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 18px 28px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-links > a:hover,
+.dropbtn:hover {
+    background: #28b71c;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0a630e;
+    min-width: 220px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 14px 18px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background: #07470a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ==========================
+   MAIN & HOMEPAGE LAYOUT
+========================== */
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main section {
+    margin-bottom: 50px;
+}
+
+/* Base layout: Single column for Mobile */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content {
+    text-align: left;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content p {
+    max-width: 750px;
+    margin: 25px auto;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+/* ==========================
+   SIDEBAR & MEDIA
+========================== */
+
+.sidebar {
+    background: #555;
+    padding: 20px;
+    border: 3px solid #666;
+    text-align: center;
+}
+
+.top-front-page-title {
+    margin-bottom: 20px;
+}
+
+.side-item {
+    margin-bottom: 20px;
+}
+
+.side-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-media img {
+    max-width: 100%;
+    height: auto;
+}
+
+.side-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.side-caption p {
+    margin: 0;
+}
+
+/* Video Wrapper */
+.anthem-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+}
+
+/* ==========================
+   STAT CARDS
+========================== */
+
+.stats-card {
+    border: 1px solid #444;
+    background-color: #2b2b2b;
+    padding: 15px;
+    margin-top: 20px;
+    font-family: monospace;
+}
+
+.stats-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: 'Times New Roman', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    border-bottom: 1px solid #00aa00;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 8px;
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: #aaa;
+    text-align: center;
+}
+
+.stat-value {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* ==========================
+   NEWS & FOOTER
+========================== */
+
+.news {
+    margin-top: 50px;
+    background: #555;
+    padding: 20px;
+    border: 2px solid #666;
+}
+
+.news h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.news ul {
+    padding-left: 20px;
+}
+
+.news li {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+footer {
+    margin-top: 50px;
+    background: #2b2b2b;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #32d629;
+}
+
+/* ==========================
+   DESKTOP RESPONSIVE BREAKPOINT
+========================== */
+
+@media (min-width: 900px) {
+    .homepage {
+        display: grid;
+        grid-template-columns: 280px 1fr 280px; /* Restores 3-column grid for desktop */
+        gap: 30px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for key/value on desktop */
+    }
+
+    .stat-label {
+        text-align: right;
+    }
+
+    .stat-value {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .side-media {
+        height: 300px;
+    }
+
+    .top-front-page-title {
+        height: 60px;
+    }
+
+    .side-caption {
+        height: 90px;
+        justify-content: flex-start;
+        padding-top: 22px;
+    }
+}
+
+/* ==========================
+   MOBILE MENU TOGGLE
+========================== */
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links > a,
+    .dropbtn {
+        width: 100%;
+        padding: 16px;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background: #0f6f12;
+    }
+
+    .dropdown-content a {
+        padding-left: 40px;
+        border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+}
+/* ==========================
+   Flag CLICK link
+========================== */
+/* Removes default link styling and ensures the link expands fully */
+.header-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Makes the entire area clickable */
+}
