@@ -409,3 +409,230 @@ footer a:hover {
         border-top: 1px solid rgba(255, 255, 255, .08);
     }
 }
+/* ==========================
+   Flag CLICK link
+========================== */
+/* Removes default link styling and ensures the link expands fully */
+.header-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Makes the entire area clickable */
+}
+/* ==========================
+   Timeline
+========================== */
+.timeline-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Image Left (1 part), Text Center (2 parts), Image Right (1 part) */
+  align-items: center;               /* Vertically centers images and text */
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: center;                /* Keeps all text centered */
+}
+
+.timeline-row img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  justify-self: center;              /* Centers image inside its grid column */
+}
+
+/* Empty placeholder when a side doesn't have an image */
+.timeline-row .spacer {
+  visibility: hidden;
+}
+/* ==========================
+   About Jera Page
+========================== */
+.national-symbols {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.national-symbols h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.symbols-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.symbol-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 340px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.symbol-card img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.symbol-card h3 {
+    margin-bottom: 15px;
+    color: #1d3557;
+}
+
+.symbol-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ==========================
+   Etmology Page
+========================== */
+
+/* --- ETYMOLOGY PAGE MAIN CONTAINER --- */
+.etymology-page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 24px 60px 24px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #e0e0e0;
+}
+
+/* --- HEADER BLOCK --- */
+.etymology-page .page-header {
+  margin-bottom: 24px;
+}
+
+.etymology-page .page-header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.etymology-page .page-header .lead {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.etymology-page hr {
+  border: 0;
+  border-top: 1px solid #555555;
+  margin: 28px 0;
+}
+
+/* --- SECTIONS --- */
+.etymology-page section {
+  margin-bottom: 36px;
+}
+
+.etymology-page section h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.35rem;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #444444;
+  padding-bottom: 6px;
+}
+
+/* --- PHONETICS & META DATA BOX --- */
+.etymology-page .phonetics-box {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #444444;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.etymology-page .phonetics-box p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.etymology-page .phonetics-box p:last-child {
+  margin-bottom: 0;
+}
+
+.etymology-page .phonetics-box code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #2a2a2a;
+  color: #1a8a1a; /* Matching flag green accent */
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* --- PARAGRAPHS & LISTS --- */
+.etymology-page p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.etymology-page ul {
+  list-style-type: disc;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
+.etymology-page ul li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.etymology-page ul li strong {
+  color: #ffffff;
+}
+
+/* --- BLOCKQUOTE (SUMMARY) --- */
+.etymology-page .imperial-quote {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d0d0d0;
+  padding: 14px 20px;
+  border-left: 3px solid #1a8a1a;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+/* --- CENTERED HERO IMAGE BLOCK --- */
+.etymology-hero-image {
+  text-align: center;
+  margin: 24px auto;
+  max-width: 350px; /* Adjust size based on your graphic's dimensions */
+}
+
+.etymology-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #444444;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px; /* Gives it a framed document look */
+  box-sizing: border-box;
+}
+
+.etymology-hero-image figcaption {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  color: #888888;
+  margin-top: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
