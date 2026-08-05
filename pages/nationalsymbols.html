@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Jera Empire</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Jera Empire" />
+    <link rel="manifest" href="../images/site.webmanifest" />
+</head>
+
+<body>
+
+<header>
+    <a href="../index.html" class="header-link">
+        <div class="header-container">
+
+            <img src="../images/flag.png" alt="Jera Empire Flag" class="flag">
+
+            <div class="title-area">
+                <h1>The Jera Empire</h1>
+                <p class="subtitle">Official Government Website</p>
+            </div>
+
+        </div>
+    </a>
+</header>
+
+<nav>
+
+<button class="menu-toggle" onclick="toggleMenu()">
+☰ Menu
+</button>
+<div class="nav-links">
+
+    <a href="../index.html">Overview</a>
+
+    <div class="dropdown">
+        <a class="dropbtn">State Affairs ▾</a>
+        <div class="dropdown-content">
+            <a href="government.html">The Government</a>
+            <a href="sovereign.html">The Sovereign</a>
+            <a href="laws.html">Laws & Constitution</a>
+            <a href="assembly.html">Assembly of the Empire</a>
+            <a href="diplomacy.html">Diplomacy</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a class="dropbtn">State Records ▾</a>
+        <div class="dropdown-content">
+            <a href="history.html">History</a>
+            <a href="etymology.html">Etymology</a>
+            <a href="military.html">Military</a>
+            <a href="nationalsymbols.html">Symbols</a>
+            <a href="nationalidentity.html">National Identity</a>
+        </div>
+    </div>
+
+    <a href="citizenship.html">Citizenship</a>
+    <a href="contact.html">Contact</a>
+
+</div>
+</nav>
+
+<section class="national-symbols">
+    <h2>National Symbols</h2>
+
+    <div class="symbols-grid">
+
+        <!-- Coat of Arms -->
+        <div class="symbol-card">
+            <img src="../images/coat_of_arms.png" alt="Coat of Arms of the Jera Empire">
+            <h3>Coat of Arms</h3>
+            <p>
+This coat of arms features a prominent black eagle in chief over a bright green field, symbolizing state sovereignty, constant vigilance, and authority over a prosperous land, while the dark lower field and the diagonal checkered band (bend chequy) represent discipline, tactical resolve, structural balance, and the strength of the nation forged through hardship.
+            </p>
+        </div>
+
+        <!-- Flag -->
+        <div class="symbol-card">
+            <img src="../images/flag.png" alt="Flag of the Jera Empire">
+            <h3>National Flag</h3>
+            <p>
+Featuring a black Nordic cross bordered in white against a vibrant green field, this flag combines traditional European vexillology with the national colors, where the off-center cross represents structural unity and alignment, the green field signifies the vitality and flourishing growth of the land, the black cross embodies iron resolve and national defense, and the thin white border symbolizes the integrity and peace that safeguard the state's principles.
+            </p>
+        </div>
+
+        <!-- Anthem -->
+        <div class="symbol-card">
+                <iframe
+                    class="anthem-video"
+                    src="https://www.youtube.com/embed/eqpqWIR-xpo?modestbranding=1&rel=0"
+                    title="Jera National Anthem"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            <h3> National Anthem</h3>
+            <p>
+The anthem's rich brass instrumentation and heavy choral layers create a powerful sense of historic grandeur, driving home the pride and military discipline of the state. Its soaring fanfares mirror the sovereign authority of the imperial eagle watching over the realm, while its steady, solemn rhythm reflects the green heartlands and the iron resolve of the Empire's people standing firm against any threat.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+
+<p>
+© 2026 The Jera Empire
+</p>
+
+<p>
+
+<a href="pages/privacy.html">Privacy Policy</a> |
+<a href="pages/contact.html">Contact</a> |
+<a href="pages/sitemap.html">Site Map</a>
+
+</p>
+
+</footer>
+<script>
+function toggleMenu(){
+
+    document.querySelector(".nav-links").classList.toggle("show");
+
+}
+</script>
+
+</body>
+</html>
