@@ -636,3 +636,137 @@ footer a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+/* ==========================
+   Government Page
+========================== */
+
+/* Main Container */
+
+.government-page{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 32px 80px;
+}
+
+.government-card {
+    background: var(--surface);
+    padding: 30px;
+    border-left: 6px solid var(--accent);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.government-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12);
+}
+
+.government-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.government-card ul {
+    padding-left: 20px;
+}
+
+.government-card li {
+    margin-bottom: 8px;
+}
+
+/* Generates breathing room above and below section headings */
+.government-page h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.government-page h3 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Adds consistent spacing between all paragraphs */
+.government-page p {
+    line-height: 1.7;        /* Improves line readability */
+    margin-bottom: 20px;     /* Separates paragraphs from each other */
+}
+
+/* Spaces out individual historical articles in Political Development */
+#political-history article {
+    margin-bottom: 35px;     /* Spaces out Founding Era, Isolation Period, etc. */
+}
+
+/* Ensures lists aren't squished against surrounding text */
+.government-page ul {
+    margin-bottom: 25px;
+}
+
+#principles ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Increased minimum card width */
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+}
+
+#principles li {
+    background: #606060;
+    border-left: 4px solid #18a818;
+    padding: 18px;
+    border-radius: 6px;
+    box-sizing: border-box; /* Ensures padding stays inside the box width */
+    text-align: center;
+}
+.officials-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.officials-table th{
+    background:#168816;
+    color:white;
+    text-transform:uppercase;
+}
+
+.officials-table td,{
+    padding: 8px 12px; /* Reduce top/bottom padding */
+    vertical-align: middle; /* Keeps text centered relative to smaller images */
+}
+.officials-table th{
+    padding:14px;
+    border:1px solid #777;
+}
+
+.officials-table tbody tr:nth-child(even){
+    background:#5f5f5f;
+}
+.executive-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:24px;
+}
+.officials-table img {
+    width: 100px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+/* ==========================
+   Assembly Page
+========================== */
+.official-item h3 {
+    display: flex;
+    justify-content: space-between; /* Pushes name to left, date to far right */
+    align-items: center;
+    max-width: 500px;                /* Controls how wide the row stretches */
+    margin-bottom: 12px;             /* Spaces out each line vertically */
+    border-bottom: 1px solid #444;   /* Optional subtle separator line */
+    padding-bottom: 6px;
+}
+
+.official-item .term-date {
+    color: #aaa;                     /* Optional muted color for dates */
+    font-size: 0.9em;
+}

@@ -68,3 +68,236 @@
 
 </div>
 </nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomatic Relations | Jera Empire</title>
+
+    <style>
+
+        .flagdiplopage {
+        width: 28px;
+        height: 18px;
+        object-fit: cover;
+        vertical-align: middle;
+        margin-right: 8px;
+        }
+
+        
+        .diplomacy-page {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            background: #0c0a0a;
+            border: 1px solid #d6d0c2;
+            border-radius: 10px;
+            padding: 36px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+        }
+
+        .relations-list {
+            margin: 8px 0 20px 0;
+            padding-left: 25px;
+        }
+
+        .relations-list li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .friendly {
+            color: #286b45;
+        }
+
+        .bad {
+            color: #a35a24;
+        }
+
+        .enemy {
+            color: #9c3030;
+        }
+
+        .special {
+            color: #5a4a8a;
+        }
+
+        .alliance {
+            color: #245b85;
+        }
+
+        .sister {
+            color: #806321;
+        }
+
+        .sanctioned {
+            color: #802121;
+        }
+
+        .organization {
+            color: #14cebe;
+        }
+
+        .recognition-note {
+            background: #035e07;
+            border-left: 4px solid #f7f4ef;
+            padding: 18px 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .organizations {
+            font-weight: bold;
+        }
+
+        @media (max-width: 700px) {
+            .diplomacy-page {
+                margin: 30px auto;
+            }
+
+            .section {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="diplomacy-page">
+
+    <h1>Diplomatic Relations</h1>
+
+ <!-- Active Relations -->
+    <section class="section" id="active-relations">
+        <h2>Active Relations</h2>
+
+        <div class="recognition-note">
+            The Jera Empire still recognizes all formal land-based,
+            physical micronations.
+        </div>
+
+        <h3 class="special">Particular Recognized Micronations</h3>
+        <ul class="relations-list">
+            <li>
+                <img src="../images/sniland.jpg" alt="Flag of Sniland" class="flagdiplopage">
+                Sniland
+            </li>
+            <li>
+                <img src="../images/culvershire.jpg" alt="Flag of Culvershire" class="flagdiplopage">
+                Empire of Culvershire
+            </li>
+            <li>
+                <img src="../images/bruskaria.png" alt="Flag of Bruskaria" class="flagdiplopage">
+                Grand Duchy of Bruskaria
+            </li>
+            <li>
+                <img src="../images/vithuanum.png" alt="Flag of Vithuanum" class="flagdiplopage">
+                Principality of Vithuanum
+            </li>
+        </ul>
+
+        <h3 class="organization">Organizations</h3>
+        <ul class="relations-list">
+            <li class="organizations">
+                 <img src="../images/imacc.png" alt="IMACC Logo" class="flagdiplopage">
+    
+                Inter-Micronational Anti-Cybercrime Coalition
+            </li>
+        </ul>
+        <h3 class="sanctioned">Sanctioned</h3>
+        <ul class="relations-list">
+                <li>
+                <img src="../images/berlandia.png" alt="Flag of Berlandia" class="flagdiplopage">
+                Grand Principality of Berlandia
+            </li>
+        </ul>
+    </section>
+
+    <!-- Previous Relations -->
+    <section class="section" id="previous-relations">
+        <h2>Previous Relations</h2>
+
+        <h3>The Formational Years (2012–2015)</h3>
+
+        <h3 class="friendly">Friendly Relations</h3>
+        <ul class="relations-list">
+            <li>Sniland <em>(Jera Empire has a territory named after it)</em></li>
+        </ul>
+
+        <h3 class="bad">Bad Relations</h3>
+        <ul class="relations-list">
+            <li>Doberman Island Republic</li>
+            <li>The Federation of Westland (United West)</li>
+        </ul>
+
+        <h3 class="enemy">Enemies</h3>
+        <ul class="relations-list">
+            <li>Salarian's People Republic</li>
+        </ul>
+
+        <h3 class="special">Particular Recognized Micronations</h3>
+        <ul class="relations-list">
+            <li>Republic of Molossia</li>
+            <li>Principality of Sealand</li>
+            <li>Ashukov Federation</li>
+        </ul>
+
+        <h3 class="alliance">Allies &amp; Alliances</h3>
+        <ul class="relations-list">
+            <li>Micronational Defense Command</li>
+            <li>Principality of Lyonesse</li>
+        </ul>
+
+        <h3 class="sister">Sister States</h3>
+        <ul class="relations-list">
+            <li>Federal Imperial Republic of Jakania</li>
+        </ul>
+    </section>
+
+
+   
+
+</main>
+
+</body>
+</html>
+<footer>
+
+<p>
+© 2026 The Jera Empire
+</p>
+
+<p>
+
+<a href="pages/privacy.html">Privacy Policy</a> |
+<a href="pages/contact.html">Contact</a> |
+<a href="pages/sitemap.html">Site Map</a>
+
+</p>
+
+</footer>
+<script>
+function toggleMenu(){
+
+    document.querySelector(".nav-links").classList.toggle("show");
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laws & Constitution - The Jera Empire</title>
+
+    <!-- Load Cinzel from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+
+    <style>
+
+    .container{
+        max-width:1400px;
+        margin:50px auto;
+        padding:0 20px;
+    }
+
+    .page-title{
+        text-align:center;
+        font-size:48px;
+        margin-bottom:15px;
+    }
+
+    .page-subtitle{
+        text-align:center;
+        color:#ccc;
+        font-size:20px;
+        margin-bottom:60px;
+    }
+
+    /* Two-column layout: Constitution left, Laws right,
+       separated by a thin vertical line */
+
+    .law-columns{
+        display:flex;
+        align-items:stretch;
+    }
+
+    .law-columns .column{
+        flex:1;
+        min-width:0;
+    }
+
+    .col-left{
+        padding-right:45px;
+        border-right:1px solid #999;
+    }
+
+    .col-right{
+        padding-left:45px;
+    }
+
+    .col-title{
+        text-align:center;
+        font-weight:bold;
+        font-size:40px;
+        margin:0 0 40px;
+    }
+
+    .law-columns p,
+    .law-columns li{
+        font-size:20px;
+        line-height:1.8;
+        color:#ececec;
+    }
+
+    /* Constitution */
+
+    .article{
+        margin-bottom:45px;
+    }
+
+    .article h3{
+        color:#43ce1b;
+        font-size:26px;
+        margin:0 0 18px;
+        border-bottom:1px solid #777;
+        padding-bottom:10px;
+    }
+
+    .article h4{
+        color:#43ce1b;
+        font-size:21px;
+        margin:25px 0 12px;
+    }
+
+    .article ol{
+        padding-left:28px;
+        margin:0;
+    }
+
+    .article ol > li{
+        margin-bottom:12px;
+    }
+
+    .article ul{
+        margin-top:8px;
+        padding-left:25px;
+    }
+
+    .article ul > li{
+        margin-bottom:6px;
+    }
+
+    /* Laws */
+
+    .laws-list{
+        padding-left:28px;
+        margin:0;
+    }
+
+    .laws-list li{
+        margin-bottom:18px;
+    }
+
+    .laws-list li::marker{
+        color:#43ce1b;
+    }
+
+    /* Mobile: stack the columns, divider becomes horizontal */
+
+    @media (max-width:900px){
+
+        .law-columns{
+            flex-direction:column;
+        }
+
+        .col-left{
+            padding-right:0;
+            border-right:none;
+        }
+
+        .col-right{
+            padding-left:0;
+            border-top:1px solid #999;
+            margin-top:50px;
+            padding-top:50px;
+        }
+
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-container">
+
+        <img src="../images/flag.png" alt="Jera Empire Flag" class="flag">
+
+        <div class="title-area">
+            <h1>The Jera Empire</h1>
+            <p class="subtitle">Official Government Website</p>
+        </div>
+
+    </div>
+
+</header>
+
+<nav>
+
+<button class="menu-toggle" onclick="toggleMenu()">
+☰ Menu
+</button>
+
+<div class="nav-links">
+
+    <div class="dropdown">
+        <a href="../index.html" class="dropbtn">Overview ▾</a>
+        <div class="dropdown-content">
+            <a href="aboutjera.html">About Jera</a>
+            <a href="nationalidentity.html">National Identity</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="government.html" class="dropbtn">State Affairs ▾</a>
+        <div class="dropdown-content">
+            <a href="sovereign.html">The Sovereign</a>
+            <a href="laws.html">Laws & Constitution</a>
+            <a href="assembly.html">Assembly of the Empire</a>
+            <a href="diplomacy.html">Diplomacy</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="records.html" class="dropbtn">State Records ▾</a>
+        <div class="dropdown-content">
+            <a href="history.html">History</a>
+            <a href="etymology.html">Etymology</a>
+            <a href="military.html">Military</a>
+        </div>
+    </div>
+
+    <a href="citizenship.html">Citizenship</a>
+    <a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+
+<div class="container">
+
+<h1 class="page-title">Laws & Constitution</h1>
+
+<p class="page-subtitle">The founding framework and standing laws of the Jera Empire</p>
+
+<div class="law-columns">
+
+<!-- ==========================
+     CONSTITUTION (LEFT)
+========================== -->
+
+<div class="column col-left">
+
+<h2 class="col-title">Constitution</h2>
+
+<div class="article">
+<h3>Article I — The Empire</h3>
+<ol>
+<li>The Jera Empire is a sovereign, unitary state.</li>
+<li>The Empire may not be legally dissolved by any person or institution other than the Emperor, even if the Emperor is the final remaining citizen.</li>
+<li>Territorial districts exist solely as administrative divisions of the Empire and possess no inherent sovereignty.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article II — The Emperor</h3>
+<ol>
+<li>The Emperor shall be addressed as <strong>"Your Sovereign"</strong> rather than "Your Majesty."</li>
+<li>The monarchy shall be non-hereditary.</li>
+<li>Upon death or abdication, the Emperor's designated successor shall inherit the Throne according to the Emperor's written will.</li>
+<li>The succession process shall be overseen by an Imperial Executor.</li>
+<li>Any succession dispute shall first be adjudicated by the Judiciary.</li>
+<li>If no lawful successor can be determined through judicial proceedings, the Empire shall be considered dissolved and any successor state shall be regarded as a new political entity not bound by this Constitution.</li>
+<li>Upon the death, resignation, or permanent vacancy of both the President and Vice President, executive authority shall temporarily transfer to the Emperor until lawful successors assume office.</li>
+<li>The Emperor may maintain independent administrative functions funded through personal income and any allowance appropriated by the Assembly.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article III — Citizenship</h3>
+<ol>
+<li>Citizenship shall be acquired through application.</li>
+<li>The Executive shall administer the citizenship process.</li>
+<li>Eligibility requirements for citizenship shall be established by law enacted by the Assembly.</li>
+<li>All citizens eleven (11) years of age and older shall possess the right to vote and hold public office.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article IV — Rights and Liberties</h3>
+<ol>
+<li>Freedom shall be a foundational principle of the Empire.</li>
+<li>Citizens shall enjoy freedom of expression, speech, religion, press, and peaceful assembly.</li>
+<li>Citizens shall possess the right to keep and bear arms.</li>
+<li>Citizens shall be secure against unreasonable searches and seizures.</li>
+<li>Additional rights may be recognized by law provided they do not diminish the rights guaranteed herein.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article V — The Assembly of the Empire</h3>
+<ol>
+<li>Legislative authority shall be vested in a single chamber known as the <strong>Assembly of the Empire</strong>.</li>
+<li>Members of the Assembly may be elected through petition elections or appointed by the Emperor subject to confirmation by the people.</li>
+<li>The Assembly shall possess authority to:
+<ul>
+<li>Enact laws;</li>
+<li>Levy taxes;</li>
+<li>Draft and approve budgets;</li>
+<li>Conduct censuses;</li>
+<li>Confirm or reject foreign affairs actions;</li>
+<li>Exercise all legislative powers granted by this Constitution.</li>
+</ul>
+</li>
+<li>No term limits shall apply to Assembly members.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article VI — Elections and Recalls</h3>
+<ol>
+<li>Elections may be called by:
+<ul>
+<li>Citizen petition;</li>
+<li>Vote of the Assembly;</li>
+<li>Order of the Emperor.</li>
+</ul>
+</li>
+<li>A petition signed by at least thirty percent (30%) of eligible voters within the relevant constituency shall be sufficient to trigger a recall election or challenge for a specific office.</li>
+<li>No constitutional office shall be subject to term limits unless otherwise established by constitutional amendment.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article VII — The Executive</h3>
+
+<h4>Section 1 — The President</h4>
+<ol>
+<li>Executive authority shall be vested in the President.</li>
+<li>The President shall serve as Chief Executive and Commander-in-Chief of the Armed Forces.</li>
+<li>Laws passed by the Assembly shall require the President's signature to take effect.</li>
+<li>The President may veto legislation passed by the Assembly.</li>
+</ol>
+
+<h4>Section 2 — The Vice President</h4>
+<ol>
+<li>The Vice President shall be elected through an Electoral College representing all territorial districts.</li>
+<li>Electoral votes shall be allocated according to a census approved by the Assembly.</li>
+<li>Every territory shall retain a minimum proportional stake in the Electoral College, regardless of population.</li>
+</ol>
+
+<h4>Section 3 — Succession</h4>
+<ol>
+<li>The President shall be elected by direct popular vote.</li>
+<li>The Vice President shall succeed the President upon vacancy of that office.</li>
+<li>If both offices become vacant, authority shall transfer to the Emperor until succession is resolved.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article VIII — Foreign Affairs</h3>
+<ol>
+<li>The President and Emperor may initiate or accept diplomatic relations with foreign entities.</li>
+<li>The President shall possess final authority in foreign affairs.</li>
+<li>The Assembly may confirm or reject foreign agreements, recognitions, and diplomatic actions.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article IX — Territorial Government</h3>
+<ol>
+<li>Territorial Governors shall be appointed by the Emperor or elected through petition and confirmation procedures established by law.</li>
+<li>Governors shall administer and enforce Imperial law within their territories.</li>
+<li>Governors shall possess no independent legislative authority.</li>
+<li>Governors may not enact laws, taxes, or regulations contrary to Imperial law.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article X — Militias</h3>
+<ol>
+<li>Every territorial district shall possess the right to organize and maintain a district militia.</li>
+<li>District militias shall normally operate under the authority of their Governor.</li>
+<li>If a Governor is determined to be in secession, district militias shall obey the lawful orders of the President or Emperor.</li>
+<li>Secession shall consist of:
+<ul>
+<li>A declaration of war against the Empire;</li>
+<li>A judicial finding of contempt or rebellion;</li>
+<li>A determination by vote of the Assembly.</li>
+</ul>
+</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article XI — The Judiciary</h3>
+<ol>
+<li>Judicial authority shall be exercised by the Sovereign Judiciary.</li>
+<li>The Judiciary shall consist of up to four members appointed by the President.</li>
+<li>The Emperor shall serve as the ultimate judicial authority.</li>
+<li>When the Judiciary is evenly divided, the Emperor shall cast the deciding vote.</li>
+<li>The Judiciary shall adjudicate constitutional disputes, succession disputes, and other matters established by law.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article XII — Constitutional Amendments</h3>
+<ol>
+<li>Amendments may be adopted by:
+<ul>
+<li>Unanimous approval of the Assembly and signature of the Executive; or</li>
+<li>A Territorial Constitutional Convention approved by a majority of citizens in a majority of territories.</li>
+</ul>
+</li>
+<li>Governor consent shall normally be required for a territorial convention.</li>
+<li>If a Governor refuses consent, citizens may recall the Governor and proceed following the Governor's removal.</li>
+</ol>
+</div>
+
+<div class="article">
+<h3>Article XIII — Finance</h3>
+<ol>
+<li>The Assembly shall levy taxes and appropriate public funds.</li>
+<li>The Assembly shall establish the annual budget of the Empire.</li>
+<li>The Emperor may administer independent programs and initiatives using funds lawfully appropriated to the Imperial Household and personal resources.</li>
+</ol>
+</div>
+
+</div>
+
+<!-- ==========================
+     LAWS (RIGHT)
+========================== -->
+
+<div class="column col-right">
+
+<h2 class="col-title">Laws</h2>
+
+<ul class="laws-list">
+<li>The penalty for rebellion is immediate removal.</li>
+<li>The penalty imposed on theft is to have to pay back in full, or return the item.</li>
+<li>A politician found guilty of corruption/fraud is removed from office and jailed; this person can, after his release, no longer re-enter politics.</li>
+<li>Freedom of speech is guaranteed, but violent speech is illegal and punishable.</li>
+<li>Printing/publishing and spreading violent speech is illegal and punishable.</li>
+<li>Freedom of religion is guaranteed.</li>
+<li>Freedom of sexual preference is guaranteed, with same rights for all. (Same-sex marriage is granted.)</li>
+<li>Women have total equal rights to men.</li>
+<li>Pension age: 65.</li>
+<li>All citizens have the right to sue.</li>
+<li>All citizens have the right to basic education.</li>
+<li>Minimum wage: 4.50 USD/hour.</li>
+<li>If one cannot afford to pay his/her debt, the government will provide financial aid at no cost.</li>
+<li>All citizens have the right to unemployment pay for a maximum of 1 month (Jera jobs only), unless proof of an attempt at job finding is shown.</li>
+<li>Animals have the right to be protected from inhumane torture and abuse. Any who torture or abuse animals are subject to punishment by law.</li>
+<li>The regular citizen does have the right to bear arms. Any citizen in possession of illegal firearms will be shot unless he/she surrenders.</li>
+<li>Pedophilia is a criminal act and is punished by lifelong jail time, without the right of parole.</li>
+<li>Necrophilia is a crime and punishable by jail time; the corpse is cremated.</li>
+<li>Child marriages are forbidden. (Anyone under the age of 10 is considered a child.) (Teen marriages must be near same age, by one year older or younger.)</li>
+<li>Legal voting age / legal driving age / military conscription age / age of consent: 13.</li>
+<li>Polygamy is a criminal act; the second wife is sent back to the country of origin.</li>
+<li>Abortion is legal under the following 3 circumstances: rape, threat to the life of the mother, or in case of deformation of the infant.</li>
+<li>Euthanasia is allowed in the following 1 case: the patient has no possibility of recovery and can't tolerate pain any longer.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 The Jera Empire
+</p>
+
+<p>
+
+<a href="privacy.html">Privacy Policy</a> |
+<a href="contact.html">Contact</a> |
+<a href="sitemap.html">Site Map</a>
+
+</p>
+
+</footer>
+
+<script>
+function toggleMenu(){
+
+    document.querySelector(".nav-links").classList.toggle("show");
+
+}
+</script>
+
+</body>
+</html>
