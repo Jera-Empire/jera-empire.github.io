@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Index -->
+  <url>
+    <loc>https://jera-empire.github.io/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Pages -->
+  <url>
+    <loc>https://jera-empire.github.io/assembly.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/citizenship.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/contact.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/diplomacy.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/etymology.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/government.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/history.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/laws.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/military.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/national-identity.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/national-symbols.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/privacy.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/sitemap.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jera-empire.github.io/sovereign.html</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>

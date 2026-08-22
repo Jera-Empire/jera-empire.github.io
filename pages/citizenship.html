@@ -69,7 +69,433 @@
 </div>
 
 </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizenship Application | Jera Empire</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            color: #222;
+        }
+        header {
+    color: white;
+}
+        .application-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .application-card {
+            background: #fff;
+            border: 1px solid #c9c2ae;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+            padding: 45px;
+        }
+
+        .official-heading {
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+
+        .official-heading .department {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .official-heading h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .official-heading .subtitle {
+            margin-top: 10px;
+            font-size: 17px;
+            color: #555;
+        }
+
+        .intro {
+            line-height: 1.7;
+            margin-bottom: 35px;
+        }
+
+        .notice {
+            background: #f3f0e8;
+            border-left: 4px solid #333;
+            padding: 18px 20px;
+            margin: 25px 0 35px;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            font-size: 22px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .required {
+            color: #8b0000;
+        }
+
+        .help-text {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+            line-height: 1.5;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #aaa;
+            background: #fff;
+            font-family: inherit;
+            font-size: 16px;
+            border-radius: 2px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #333;
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .address-box {
+            background: #faf9f5;
+            border: 1px solid #d5d0c3;
+            padding: 20px;
+        }
+
+        .privacy {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+            margin-top: 30px;
+        }
+
+        .submit-container {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 30px;
+            border-top: 1px solid #ccc;
+        }
+
+        button {
+            background: #222;
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            font-family: inherit;
+            font-size: 17px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 650px) {
+            .application-container {
+                margin: 15px auto;
+                padding: 10px;
+            }
+
+            .application-card {
+                padding: 25px 20px;
+            }
+
+            .official-heading h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="application-container">
+
+    <div class="application-card">
+
+        <div class="official-heading">
+            <div class="department">
+                Jera Empire
+            </div>
+
+            <h1>Application for Citizenship</h1>
+
+            <div class="subtitle">
+                Civil Administration
+            </div>
+        </div>
+
+        <div class="intro">
+            <p>
+                The Jera Empire welcomes applications from individuals who
+                wish to become citizens of the Empire.
+            </p>
+
+            <p>
+                Please complete the following application truthfully and
+                completely. Applications will be reviewed by the appropriate
+                authorities before citizenship is granted.
+            </p>
+        </div>
+
+        <div class="notice">
+            <strong>Citizenship Requirement</strong><br>
+            Applicants must be at least <strong>13 years of age</strong>
+            to be eligible for citizenship in the Jera Empire.
+        </div>
+
+        <form
+            action="https://formspree.io/f/xgawqlak"
+            method="POST"
+        >
+
+            <!-- PERSONAL INFORMATION -->
+
+            <div class="section-title">
+                I. Personal Information
+            </div>
+
+            <div class="form-group">
+                <label for="name">
+                    Full Name <span class="required">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    autocomplete="name"
+                >
+            </div>
+
+            <div class="form-group">
+    <label for="date_of_birth">
+        Date of Birth <span class="required">*</span>
+    </label>
+
+    <input
+        type="date"
+        id="date_of_birth"
+        name="date_of_birth"
+        required
+    >
+
+    <span class="help-text">
+        Applicants must be at least 13 years old.
+    </span>
+</div>
+
+            <div class="form-group">
+                <label for="sex">
+                    Sex
+                </label>
+
+                <select id="sex" name="sex">
+                    <option value="">Prefer not to say</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="interests">
+                    Areas of Interest <span class="required">*</span>
+                </label>
+
+                <textarea
+                    id="interests"
+                    name="areas_of_interest"
+                    required
+                    placeholder="What areas of the Jera Empire are you interested in?"
+                ></textarea>
+            </div>
+
+
+            <!-- KNOWLEDGE AND CONTRIBUTIONS -->
+
+            <div class="section-title">
+                II. Citizenship Questions
+            </div>
+
+            <div class="form-group">
+                <label for="history">
+                    Personal Summary of the Jera Empire
+                    <span class="required">*</span>
+                </label>
+
+                <span class="help-text">
+                    Please provide your understanding of the Jera Empire
+                    historically, culturally, and militarily.
+                </span>
+
+                <textarea
+                    id="history"
+                    name="jera_empire_summary"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">
+                    Skills You Could Bring
+                    <span class="required">*</span>
+                </label>
+
+                <span class="help-text">
+                    Tell us about skills, knowledge, experience, or talents
+                    that you could contribute to the Empire.
+                </span>
+
+                <textarea
+                    id="skills"
+                    name="skills"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="reason">
+                    Reason for Desiring Citizenship
+                    <span class="required">*</span>
+                </label>
+
+                <textarea
+                    id="reason"
+                    name="reason_for_citizenship"
+                    required
+                ></textarea>
+            </div>
+
+
+            <!-- MAILING INFORMATION -->
+
+            <div class="section-title">
+                III. Citizenship Identification
+            </div>
+
+            <div class="notice">
+                <strong>Why is a mailing address required?</strong><br>
+                If your citizenship application is approved, the Jera Empire
+                may use the mailing address provided below to send your
+                official citizenship identification card and other physical
+                citizenship materials.
+            </div>
+
+            <div class="address-box">
+
+                <div class="form-group">
+                    <label for="address">
+                        Mailing Address <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="mailing_address"
+                        required
+                        autocomplete="street-address"
+                        placeholder="Street address&#10;City, State/Province&#10;Postal Code&#10;Country"
+                    ></textarea>
+
+                    <span class="help-text">
+                        Please provide an address where physical mail can
+                        safely be received.
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- PRIVACY -->
+
+            <div class="privacy">
+
+                <strong>Privacy Notice</strong>
+
+                <p>
+                    Information submitted through this application is
+                    intended for the Jera Empire's citizenship administration
+                    and will not be published on the Jera Empire website or
+                    GitHub repository.
+                </p>
+
+                <p>
+                    The mailing address provided above is collected for the
+                    purpose of delivering citizenship identification and
+                    related physical materials.
+                </p>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <div class="submit-container">
+
+                <button type="submit">
+                    Submit Citizenship Application
+                </button>
+
+            </div>
+
+        </form>
+
+        <div class="footer-note">
+            Jera Empire · Civil Administration
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
 <footer>
 
 <p>
@@ -78,9 +504,9 @@
 
 <p>
 
-<a href="pages/privacy.html">Privacy Policy</a> |
-<a href="pages/contact.html">Contact</a> |
-<a href="pages/sitemap.html">Site Map</a>
+<a href="privacy.html">Privacy Policy</a> |
+<a href="contact.html">Contact</a> |
+<a href="sitemap.xml">Site Map</a>
 
 </p>
 
